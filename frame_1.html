@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title>
+            frame left
+        </title>
+        <style>
+        body{margin-top: 2px;
+            font-weight: lighter;
+            color:rgb(153, 72, 72);
+            background-color: rgb(228, 228, 228);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+        }
+        h4{
+            color: gray; 
+        }
+        h4:hover{
+             cursor: pointer;
+        }
+        button{
+            border: 1px solid  rgb(121, 53, 53);
+            background-color: rgb(121, 54, 54);
+            color: rgb(160, 158, 158);
+            width: 80px;
+            height: 30px;
+            border-radius: 4px;
+            transition:  background-color 0.2s, border 0.2s, color 0.2s ;
+        }
+        button:hover{
+            cursor: pointer;
+            border:1px solid black;
+            background-color: black;
+            color: white;
+        }
+        input{
+            border: 0;
+            background-color: rgb(209, 181, 181);
+        }
+        input:hover{
+            cursor: pointer;
+        }
+        </style>
+    </head>
+    <body>
+        <h4>Registeration Form</h4>
+        <label for="name">Name: </label>
+        <input type="text" name="name" placeholder="first-name" required>
+        <input type="text" name="name" placeholder="last-name" required><br>
+        <label for="age">Age: </label>
+        <input type="number" name="age" required><br>
+        <label for="gender">Gender: </label>
+        <input type="radio" name="gender" value="male" required>Male</input>
+        <input type="radio" name="gender" value="female" required>Female</input>
+        <input type="radio" name="gender" value="other" required>Other</input>
+        <br>
+        <label for="profession">Profession: </label>
+        <input list="profession">
+<datalist id="profession">
+  <option value="Student">Student</option>
+  <option value="Faculty">Faculty</option>
+  <option value="Administration">Administration</option>
+      <option value="Others">Others(please specify)</option></datalist>
+        <br>
+        <label for="name">Father's Name: </label>
+        <input type="text" name="name" placeholder="Father's name" required><br>
+        <label for="name">Mother's Name: </label>
+        <input type="text" name="name" placeholder="Mother's name" required><br>
+        <label for="dob">Date of birth: </label>
+        <input type="date" name="dob" required><br>
+        <label for="email">E-mail Address: </label>
+        <input type="email" name="email" placeholder="abc@xyz.com" required><br>
+        <label for="password">Password: </label>
+        <input type="password" name="password" required><br>
+        <button type="reset">Reset</button>
+        <button type="submit">Sign Up</button>
+        <br>Already have an account..<a href="sign.html">Sign in</a>
+        </body>
+</html>
